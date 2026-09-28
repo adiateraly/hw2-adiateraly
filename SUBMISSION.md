@@ -175,6 +175,7 @@ named fields.
 add and what you would drop to pay for it.
 
 >I would add a field such as related_records for information about other people or related cases. I would remove less important information from the state to keep it small. The empty open_questions field also shows that some information was stored in the wrong place.
+
 **4. When is compression the wrong choice?** Name a conversation where it would
 lose something that cannot be recovered, and say whether your program would
 notice.
@@ -279,14 +280,15 @@ Paste the extraction for **story-06**, the one that contradicts itself:
 **The model's prose answer, asked separately ("who should win?"):**
 
 >I recommend Aziza Bekova (C-01) for the funded place. She has the strongest overall evidence under the rubric: an excellent 3.8/4.0 GPA, two published peer-reviewed outputs, and eight months of directly relevant data experience. Although Tamerlan Saparov has longer relevant employment, Aziza's combination of the highest academic record and the only application documenting two qualifying publications gives her the strongest weighted profile.
-```
+
 
 ### Part 3 — written answers
+
 
 **1. Which rule did you have to add, and what broke without it?** Name the
 story that forced it.
 
->I had to add a rule to count only published or accepted publications. Story-04 forced this rule because it listed 4 publications, but only 1 was actually published. Without the rule, the model could count all 4 and give an incorrect research score.
+I had to add a rule to count only published or accepted publications. Story-04 forced this rule because it listed 4 publications, but only 1 was actually published. Without the rule, the model could count all 4 and give an incorrect research score.
 
 **2. Where did the model guess, and where did your code have to decide?** One
 example of each, from your run.
@@ -311,7 +313,7 @@ to make that call defensible.
 
 >The top two were C-01 (4.4) and C-04 (3.9), with a difference of 0.5. Therefore, they were not especially close, and no additional tie-breaking rule was needed.
 
----
+
 
 ## Reflection (optional, one short paragraph)
 
